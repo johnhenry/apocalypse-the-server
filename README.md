@@ -2,7 +2,7 @@
 
 Inspired by https://github.com/samrolken/nokode
 
-![Apocalypse](https://github.com/johnhenry/obfo/blob/main/apocalypse.webp)
+![Apocalypse](https://github.com/johnhenry/apocalypse-the-server/blob/main/apocalypse.webp)
 
 ```
 ╔══════════════════════════════════╗
@@ -57,7 +57,7 @@ npm install -g apocalypse-the-server
 Then run anywhere:
 
 ```bash
-apocalypse
+apocalypse-the-server
 ```
 
 ### Option 2: Install from source
@@ -83,7 +83,7 @@ export ANTHROPIC_API_KEY="your-api-key-here"
 
 **Option 2: .env file (Recommended)**
 
-Create a `.env` file in your working directory (where you run the `apocalypse` command):
+Create a `.env` file in your working directory (where you run the `apocalypse-the-server` command):
 
 ```bash
 # Required
@@ -118,7 +118,7 @@ PORT=3000
 
 See [`.env.example`](.env.example) for all options.
 
-**Important**: All relative paths (`FILE_STORAGE_DIR`, `DATABASE_PATH`) are resolved from **your current working directory** (where you run the `apocalypse` command), not from where the npm package is installed. This allows each project to have its own data directory.
+**Important**: All relative paths (`FILE_STORAGE_DIR`, `DATABASE_PATH`) are resolved from **your current working directory** (where you run the `apocalypse-the-server` command), not from where the npm package is installed. This allows each project to have its own data directory.
 
 **File Storage**: By default, file operations are restricted to the `./files` directory in your current working directory. You can change this with `FILE_STORAGE_DIR`.
 
@@ -137,13 +137,13 @@ The server will automatically load `.env` from your current working directory:
 echo "ANTHROPIC_API_KEY=your-api-key-here" > .env
 
 # Run the server
-apocalypse
+apocalypse-the-server
 ```
 
 Or set environment variables directly:
 
 ```bash
-PORT=8080 apocalypse
+PORT=8080 apocalypse-the-server
 ```
 
 ### If installed from source:
