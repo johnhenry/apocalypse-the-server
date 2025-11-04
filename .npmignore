@@ -1,0 +1,44 @@
+# Development files
+.env
+.env.local
+*.log
+node_modules/
+
+# Database and runtime files
+*.db
+*.db-shm
+*.db-wal
+files/
+
+# Git
+.git/
+.gitignore
+
+# Documentation (keep only what's specified in package.json files array)
+SECURITY_REVIEW.md
+ISSUES_FOUND_ROUND2.md
+ALL_FIXES_APPLIED.md
+IMPROVEMENTS.md
+PUBLISHING.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml

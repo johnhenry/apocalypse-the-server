@@ -1,0 +1,23 @@
+{
+  "watch": [
+    "server.js",
+    "tools.js",
+    "prompt.md",
+    ".env"
+  ],
+  "ignore": [
+    "node_modules/**",
+    "files/**",
+    "*.db",
+    "*.db-shm",
+    "*.db-wal",
+    "*.log",
+    ".git/**"
+  ],
+  "ext": "js,json,md",
+  "delay": 1000,
+  "verbose": true,
+  "events": {
+    "restart": "echo 'Server restarting due to file changes...'"
+  }
+}
